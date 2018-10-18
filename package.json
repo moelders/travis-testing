@@ -6,5 +6,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/moelders/travisci-testing.git"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.js"
   }
 }

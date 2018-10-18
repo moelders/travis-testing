@@ -1,0 +1,11 @@
+dist: trusty
+language: node_js
+node_js:
+- "10"
+
+deploy:
+  provider: script
+  script: bash .travis/build.sh
+  on:
+    tags: true
+    condition: branch = master
