@@ -1,6 +1,6 @@
 {
   "name": "travisci-testing",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Repository to test TravisCI configurations",
   "license": "MIT",
   "repository": {

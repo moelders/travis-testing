@@ -8,8 +8,9 @@ deploy:
   script: bash .travis/build.sh
   on:
     tags: true
-    condition: $TRAVIS_TAG =~ ^\d+\.\d+(\.\d+)?.*
+    condition: $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+
 - provider: script
   script: bash .travis/build.sh
   on:
-    condition: $TRAVIS_TAG =~ ^\d+\.\d+(\.\d+)?.*
+    all_branches: true
+    condition: $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+
