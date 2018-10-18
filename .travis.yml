@@ -8,21 +8,8 @@ deploy:
   script: bash .travis/build.sh
   on:
     tags: true
-    condition: "$TRAVIS_TAG =~ ^\d+\.\d+(\.\d+)?.*"
+    condition: $TRAVIS_TAG =~ ^\d+\.\d+(\.\d+)?.*
 - provider: script
   script: bash .travis/build.sh
   on:
-    condition: $TRAVIS_TAG =~ /^\d+\.\d+(\.\d+)?.*/
-- provider: script
-  script: bash .travis/build.sh
-  on:
-    condition: "$TRAVIS_TAG =~ /^\d+\.\d+(\.\d+)?.*/"
-- provider: script
-  script: bash .travis/build.sh
-  on:
-    tags: true
-    if: $TRAVIS_TAG =~ /^\d+\.\d+(\.\d+)?.*/
-- provider: script
-  script: bash .travis/build.sh
-  on:
-    if: "$TRAVIS_TAG =~ /^\d+\.\d+(\.\d+)?.*/"
+    condition: $TRAVIS_TAG =~ ^\d+\.\d+(\.\d+)?.*
