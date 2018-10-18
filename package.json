@@ -1,0 +1,10 @@
+{
+  "name": "travisci-testing",
+  "version": "0.0.0",
+  "description": "Repository to test TravisCI configurations",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moelders/travisci-testing.git"
+  }
+}
