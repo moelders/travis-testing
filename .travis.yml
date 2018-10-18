@@ -8,3 +8,4 @@ deploy:
   script: bash .travis/build.sh
   on:
     tags: true
+    condition: tag =~ /^\d+\.\d+(\.\d+)?.*/
