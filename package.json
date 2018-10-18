@@ -1,6 +1,6 @@
 {
   "name": "travisci-testing",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Repository to test TravisCI configurations",
   "license": "MIT",
   "repository": {
@@ -8,6 +8,7 @@
     "url": "https://github.com/moelders/travisci-testing.git"
   },
   "scripts": {
-    "build": "node ./scripts/build.js"
+    "build": "node ./scripts/build.js",
+    "test": "echo no tests..."
   }
 }
